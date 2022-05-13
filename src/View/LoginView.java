@@ -13,7 +13,7 @@ public class LoginView extends JFrame {
     private JButton loginButton;
 
     public LoginView() {
-        super("ActionView");
+        super("Log in");
         setContentPane(loginPanel);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

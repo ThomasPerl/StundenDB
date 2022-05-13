@@ -4,6 +4,7 @@ import View.LoginView;
 
 import Model.UserDB;
 import Model.UserModel;
+import View.OverviewView;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -24,7 +25,7 @@ public class LoginController implements ActionListener {
         if(e.getSource() == loginButton) {
             UserModel foundUser = UserDB.getInstance().getUserByUserName(view.getUserName());
             if (foundUser != null && check_credentials(foundUser)) {
-                //new ListView();
+                new OverviewView();
                 view.dispose();
                 return;
             }
